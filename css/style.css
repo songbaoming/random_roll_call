@@ -41,18 +41,55 @@ select:hover {
     cursor: pointer;
 }
 
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.systitle {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.systitle img {
+    height: 40px;
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+.systitle h1 {
+    display: inline-block;
+}
+
+h1 {
+    /* letter-spacing: 0.5em; */
+    text-align: center;
+    padding: 0;
+}
+
 .student {
     text-align: center;
     line-height: 60px;
-    position: absolute;
-    top: 40%;
-    bottom: 0;
-    left: 0.5em;
-    right: 0;
     font-size: 64px;
     font-weight: normal;
     color: #85a2b6;
     letter-spacing: 0.5em;
+    margin: 100px 0;
+    margin-left: 0.5em;
 }
 
 #name {
@@ -61,7 +98,7 @@ select:hover {
 
 .button-wrap {
     text-align: center;
-    position: absolute;
+    /* position: absolute; */
     top: 80%;
     left: 0;
     right: 0;
@@ -108,4 +145,27 @@ button {
     position: absolute;
     bottom: 0%;
     color: #666;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .result {
+        font-size: 20px;
+    }
 }
